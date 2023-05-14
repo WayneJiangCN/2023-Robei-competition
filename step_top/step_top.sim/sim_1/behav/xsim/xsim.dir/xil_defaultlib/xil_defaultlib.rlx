@@ -1,0 +1,10 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+E:/Arm/item/robei/item/step_top/step_top.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+E:/Arm/item/robei/item/step_top/step_top.srcs/sim_1/new/step_tb.v,1683815700,verilog,,,,step_tb,,,,,,,,
+E:/Arm/item/robei/item/step_top/step_top.srcs/sources_1/ip/ila_0/sim/ila_0.v,1681731882,verilog,,E:/Arm/item/robei/item/step_top/step_top.srcs/sources_1/new/key.v,,ila_0,,,,,,,,
+E:/Arm/item/robei/item/step_top/step_top.srcs/sources_1/new/key.v,1683979379,verilog,,E:/Arm/item/robei/item/step_top/step_top.srcs/sources_1/new/step_control.v,,key,,,,,,,,
+E:/Arm/item/robei/item/step_top/step_top.srcs/sources_1/new/step_control.v,1683886404,verilog,,E:/Arm/item/robei/item/step_top/step_top.srcs/sources_1/new/step_top.v,,step_control,,,,,,,,
+E:/Arm/item/robei/item/step_top/step_top.srcs/sources_1/new/step_top.v,1683885444,verilog,,E:/Arm/item/robei/item/step_top/step_top.srcs/sim_1/new/step_tb.v,,step_top,,,,,,,,

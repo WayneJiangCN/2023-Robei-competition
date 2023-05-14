@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ccd_adc.srcs/sources_1/new/sync_fifo_cnt.v" \
+"../../../../ccd_adc.srcs/sim_1/new/sync_fifo_cnt_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

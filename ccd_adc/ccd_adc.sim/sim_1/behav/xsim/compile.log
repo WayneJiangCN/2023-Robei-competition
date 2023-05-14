@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/ccd_drive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ccd_dirve
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sim_1/new/ccd_drive_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ccd_drive_tb

@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 12 17:47:09 2023
+# Process ID: 26956
+# Current directory: E:/Arm/item/robei/item/step_top
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23784 E:\Arm\item\robei\item\step_top\step_top.xpr
+# Log file: E:/Arm/item/robei/item/step_top/vivado.log
+# Journal file: E:/Arm/item/robei/item/step_top\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Arm/item/robei/item/step_top/step_top.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source step_tb.tcl
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source step_tb.tcl
+run all
+current_wave_config {Untitled 2}
+add_wave {{/step_tb/u_step_top/status}} 
+current_wave_config {Untitled 2}
+add_wave {{/step_tb/u_step_top/step_end_flag}} 
+restart
+run all
+current_wave_config {Untitled 2}
+add_wave {{/step_tb/u_step_top/status}} 
+restart
+run all
+current_wave_config {Untitled 2}
+add_wave {{/step_tb/u_step_top/A_step_control/step_now}} 
+restart
+run all
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+restart
+restart
+run all
+current_wave_config {Untitled 2}
+add_wave {{/step_tb/u_step_top/step_num}} 
+restart
+run all
+current_wave_config {Untitled 2}
+add_wave {{/step_tb/u_step_top/A_step_control/step_cnt}} 
+restart
+run all
+relaunch_sim
+run all
+current_wave_config {Untitled 2}
+add_wave {{/step_tb/u_step_top/step_end_flag}} 
+restart
+run all
+current_wave_config {Untitled 2}
+add_wave {{/step_tb/u_step_top/A_step_control/step_end}} 
+current_wave_config {Untitled 2}
+add_wave {{/step_tb/u_step_top/A_step_control/step_end_flag}} 
+restart
+run all
+restart
+relaunch_sim
+relaunch_sim
+run all
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_sim

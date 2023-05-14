@@ -1,0 +1,1513 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Apr 17 17:04:30 2023
+# Process ID: 20784
+# Current directory: E:/Arm/item/robei/step_top
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14844 E:\Arm\item\robei\step_top\step_top.xpr
+# Log file: E:/Arm/item/robei/step_top/vivado.log
+# Journal file: E:/Arm/item/robei/step_top\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project E:/Arm/item/robei/step_top/step_top.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.oopen_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 946.211 ; gain = 197.098uupdate_compile_order -fileset sources_1launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'step_control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj step_control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sim_1/new/step_control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_control_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bc9fc0e1e07442b7a286bf480423e11e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot step_control_tb_behav xil_defaultlib.step_control_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" Line 1. Module step_control doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.step_control
+Compiling module xil_defaultlib.step_control_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot step_control_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "step_control_tb_behav -key {Behavioral:sim_1:Functional:step_control_tb} -tclbatch {step_control_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source step_control_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'step_control_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 975.633 ; gain = 13.766
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run all
+set_property top step_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'step_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj step_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sim_1/new/step_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bc9fc0e1e07442b7a286bf480423e11e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot step_tb_behav xil_defaultlib.step_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/key.v" Line 29. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" Line 1. Module step_control doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.step_control
+Compiling module xil_defaultlib.step_top
+Compiling module xil_defaultlib.step_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot step_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "step_tb_behav -key {Behavioral:sim_1:Functional:step_tb} -tclbatch {step_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source step_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'step_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+update_compile_order -fileset sim_1
+open_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 17:13:45 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 17:13:45 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 17:30:47 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 17:30:47 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 17:35:18 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 17:35:18 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 17:38:38 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 17:38:38 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 17:41:21 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 17:41:21 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Mon Apr 17 17:43:26 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'step_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj step_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sim_1/new/step_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bc9fc0e1e07442b7a286bf480423e11e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot step_tb_behav xil_defaultlib.step_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/key.v" Line 29. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" Line 1. Module step_control doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.step_control
+Compiling module xil_defaultlib.step_top
+Compiling module xil_defaultlib.step_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot step_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'step_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj step_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sim_1/new/step_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bc9fc0e1e07442b7a286bf480423e11e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot step_tb_behav xil_defaultlib.step_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/key.v" Line 29. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" Line 1. Module step_control doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.step_control
+Compiling module xil_defaultlib.step_top
+Compiling module xil_defaultlib.step_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot step_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'step_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj step_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sim_1/new/step_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bc9fc0e1e07442b7a286bf480423e11e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot step_tb_behav xil_defaultlib.step_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/key.v" Line 29. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" Line 1. Module step_control doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.step_control
+Compiling module xil_defaultlib.step_top
+Compiling module xil_defaultlib.step_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot step_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "step_tb_behav -key {Behavioral:sim_1:Functional:step_tb} -tclbatch {step_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source step_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'step_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'step_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj step_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sim_1/new/step_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bc9fc0e1e07442b7a286bf480423e11e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot step_tb_behav xil_defaultlib.step_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/key.v" Line 29. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" Line 1. Module step_control doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.step_control
+Compiling module xil_defaultlib.step_top
+Compiling module xil_defaultlib.step_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot step_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+run all
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/step_tb/u_step_top/u_key/led}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/step_tb/u_step_top/u_key/key_value_out}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/step_tb/u_step_top/u_step_control/key_en}} 
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 17:51:52 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 17:51:52 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 17:58:15 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 17:58:15 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property top step_control_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'step_control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj step_control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Arm/item/robei/step_top/step_top.srcs/sim_1/new/step_control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module step_control_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bc9fc0e1e07442b7a286bf480423e11e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot step_control_tb_behav xil_defaultlib.step_control_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Arm/item/robei/step_top/step_top.srcs/sources_1/new/step_control.v" Line 1. Module step_control doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.step_control
+Compiling module xil_defaultlib.step_control_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot step_control_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Arm/item/robei/step_top/step_top.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "step_control_tb_behav -key {Behavioral:sim_1:Functional:step_control_tb} -tclbatch {step_control_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source step_control_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'step_control_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/step_control_tb/u_step_control/cnt}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 18:03:52 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 18:03:52 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 18:06:38 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 18:06:38 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 18:10:36 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 18:10:36 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 18:10:55 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 18:10:55 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 18:13:24 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 18:13:24 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+create_bd_design "design_1"
+Wrote  : <E:/Arm/item/robei/step_top/step_top.srcs/sources_1/bd/design_1/design_1.bd> 
+update_compile_order -fileset sources_1
+open_bd_design {E:/Arm/item/robei/step_top/step_top.srcs/sources_1/bd/design_1/design_1.bd}
+export_ip_user_files -of_objects  [get_files E:/Arm/item/robei/step_top/step_top.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  E:/Arm/item/robei/step_top/step_top.srcs/sources_1/bd/design_1/design_1.bd
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {3} CONFIG.C_DATA_DEPTH {4096} CONFIG.C_NUM_OF_PROBES {3} CONFIG.C_PROBE2_MU_CNT {1} CONFIG.C_PROBE1_MU_CNT {1} CONFIG.C_PROBE0_MU_CNT {1} CONFIG.ALL_PROBE_SAME_MU {true} CONFIG.ALL_PROBE_SAME_MU_CNT {1}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+generate_target all [get_files  e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci]
+launch_runs -jobs 8 ila_0_synth_1
+[Mon Apr 17 18:31:46 2023] Launched ila_0_synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci] -directory E:/Arm/item/robei/step_top/step_top.ip_user_files/sim_scripts -ip_user_files_dir E:/Arm/item/robei/step_top/step_top.ip_user_files -ipstatic_source_dir E:/Arm/item/robei/step_top/step_top.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/modelsim} {questa=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/questa} {riviera=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/riviera} {activehdl=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE1_WIDTH {3}] [get_ips ila_0]
+generate_target all [get_files  e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+launch_runs -jobs 8 ila_0_synth_1
+[Mon Apr 17 18:38:39 2023] Launched ila_0_synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci] -directory E:/Arm/item/robei/step_top/step_top.ip_user_files/sim_scripts -ip_user_files_dir E:/Arm/item/robei/step_top/step_top.ip_user_files -ipstatic_source_dir E:/Arm/item/robei/step_top/step_top.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/modelsim} {questa=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/questa} {riviera=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/riviera} {activehdl=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 18:38:49 2023] Launched ila_0_synth_1, synth_1...
+Run output will be captured here:
+ila_0_synth_1: E:/Arm/item/robei/step_top/step_top.runs/ila_0_synth_1/runme.log
+synth_1: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 18:38:49 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:19:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:19:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:19:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:19:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:20:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:20:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:20:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:20:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:20:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:20:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:20:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:20:13
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:20:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:20:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:20:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:20:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:20:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:20:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:20:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:20:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:20:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:20:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:20:33
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:20:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:24:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:24:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:24:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:24:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:24:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:24:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:24:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:24:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:25:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:25:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:25:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:25:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:25:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:25:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:25:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:25:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 19:25:26 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 19:25:26 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:28:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:28:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE3_WIDTH {8} CONFIG.C_NUM_OF_PROBES {6}] [get_ips ila_0]
+generate_target all [get_files  e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+launch_runs -jobs 8 ila_0_synth_1
+[Mon Apr 17 19:34:46 2023] Launched ila_0_synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci] -directory E:/Arm/item/robei/step_top/step_top.ip_user_files/sim_scripts -ip_user_files_dir E:/Arm/item/robei/step_top/step_top.ip_user_files -ipstatic_source_dir E:/Arm/item/robei/step_top/step_top.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/modelsim} {questa=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/questa} {riviera=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/riviera} {activehdl=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 19:37:24 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 19:37:25 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {u_step_control/step_cnt} {u_step_control/step_en} {u_step_control/step_end} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:39:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:39:48
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:39:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:39:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:40:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:40:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:40:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:40:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:40:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:40:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:40:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:40:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:40:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:40:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:40:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:40:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:40:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:40:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:41:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:41:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:41:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:41:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:41:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:41:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:41:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:41:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:41:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:41:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:41:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:41:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:41:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:41:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:42:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:42:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:12
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:48
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:55
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-17 19:43:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-17 19:43:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE3_WIDTH {23} CONFIG.C_DATA_DEPTH {8192}] [get_ips ila_0]
+generate_target all [get_files  e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+launch_runs -jobs 8 ila_0_synth_1
+[Mon Apr 17 19:44:44 2023] Launched ila_0_synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files e:/Arm/item/robei/step_top/step_top.srcs/sources_1/ip/ila_0/ila_0.xci] -directory E:/Arm/item/robei/step_top/step_top.ip_user_files/sim_scripts -ip_user_files_dir E:/Arm/item/robei/step_top/step_top.ip_user_files -ipstatic_source_dir E:/Arm/item/robei/step_top/step_top.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/modelsim} {questa=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/questa} {riviera=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/riviera} {activehdl=E:/Arm/item/robei/step_top/step_top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 19:44:55 2023] Launched ila_0_synth_1, synth_1...
+Run output will be captured here:
+ila_0_synth_1: E:/Arm/item/robei/step_top/step_top.runs/ila_0_synth_1/runme.log
+synth_1: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 19:44:55 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {u_step_control/step_cnt} }
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 20:12:53 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 20:12:54 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_step_control/u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 20:44:56 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 20:44:56 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 20:52:56 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 20:52:56 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Arm/item/robei/step_top/step_top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 17 20:58:57 2023] Launched synth_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/synth_1/runme.log
+[Mon Apr 17 20:58:57 2023] Launched impl_1...
+Run output will be captured here: E:/Arm/item/robei/step_top/step_top.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Arm/item/robei/step_top/step_top.runs/impl_1/step_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Arm/item/robei/step_top/step_top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 17 21:48:55 2023...

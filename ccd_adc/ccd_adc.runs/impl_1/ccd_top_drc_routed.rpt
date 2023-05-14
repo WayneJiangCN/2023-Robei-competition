@@ -1,0 +1,148 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr 16 14:13:03 2023
+| Host         : DESKTOP-CRQ4OKO running 64-bit major release  (build 9200)
+| Command      : report_drc -file ccd_top_drc_routed.rpt -pb ccd_top_drc_routed.pb -rpx ccd_top_drc_routed.rpx
+| Design       : ccd_top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 22
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached  | 1          |
+| REQP-1840 | Warning  | RAMB18 async control check | 20         |
+| ZPS7-1    | Warning  | PS7 block required         | 1          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_ccd_dirve/Wrreq_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENARDEN (net: u_sync_fifo_cnt/fifo_buffer_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENBWREN (net: u_sync_fifo_cnt/rd_addr0) which is driven by a register (u_data_deal_uart/Rdreq_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENBWREN (net: u_sync_fifo_cnt/rd_addr0) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENBWREN (net: u_sync_fifo_cnt/rd_addr0) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENBWREN (net: u_sync_fifo_cnt/rd_addr0) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENBWREN (net: u_sync_fifo_cnt/rd_addr0) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENBWREN (net: u_sync_fifo_cnt/rd_addr0) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENBWREN (net: u_sync_fifo_cnt/rd_addr0) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENBWREN (net: u_sync_fifo_cnt/rd_addr0) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 u_sync_fifo_cnt/fifo_buffer_reg has an input control pin u_sync_fifo_cnt/fifo_buffer_reg/ENBWREN (net: u_sync_fifo_cnt/rd_addr0) which is driven by a register (u_sync_fifo_cnt/fifo_cnt_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

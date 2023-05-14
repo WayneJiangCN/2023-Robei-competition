@@ -1,0 +1,14 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+E:/Arm/item/robei/ccd_adc/ccd_adc.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sim_1/new/ccd_drive_tb.v,1681275307,verilog,,,,ccd_drive_tb,,,,,,,,
+E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sim_1/new/ccd_top_tb.v,1681376741,verilog,,,,ccd_top_tb,,,,,,,,
+E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sim_1/new/sync_fifo_cnt_tb.v,1681306132,verilog,,,,sync_fifo_cnt_tb,,,,,,,,
+E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/adc_rec.v,1681216650,verilog,,E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/uart_send.v,,ad_rec,,,,,,,,
+E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/ccd_drive.v,1681564203,verilog,,E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sim_1/new/ccd_drive_tb.v,,ccd_dirve,,,,,,,,
+E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/ccd_top.v,1681386712,verilog,,E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/data_deal_uart.v,,ccd_top,,,,,,,,
+E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/data_deal_uart.v,1681387706,verilog,,E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/sync_fifo_cnt.v,,data_deal_uart,,,,,,,,
+E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/sync_fifo_cnt.v,1681382184,verilog,,E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/uart_send.v,,sync_fifo_cnt,,,,,,,,
+E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sources_1/new/uart_send.v,1681386773,verilog,,E:/Arm/item/robei/ccd_adc/ccd_adc.srcs/sim_1/new/ccd_top_tb.v,,uart_send,,,,,,,,

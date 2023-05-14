@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ccd_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ccd_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="383200000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/ccd_top_tb/Rst_n" type="logic">
+      <obj_property name="ElementShortName">Rst_n</obj_property>
+      <obj_property name="ObjectShortName">Rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/si" type="logic">
+      <obj_property name="ElementShortName">si</obj_property>
+      <obj_property name="ObjectShortName">si</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/uart_txd" type="logic">
+      <obj_property name="ElementShortName">uart_txd</obj_property>
+      <obj_property name="ObjectShortName">uart_txd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ad_otr" type="logic">
+      <obj_property name="ElementShortName">ad_otr</obj_property>
+      <obj_property name="ObjectShortName">ad_otr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_uart_send/uart_din" type="array">
+      <obj_property name="ElementShortName">uart_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uart_din[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_data_deal_uart/data" type="array">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_sync_fifo_cnt/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_sync_fifo_cnt/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_sync_fifo_cnt/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_sync_fifo_cnt/empty" type="logic">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_sync_fifo_cnt/full" type="logic">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_sync_fifo_cnt/fifo_cnt" type="array">
+      <obj_property name="ElementShortName">fifo_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_cnt[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_uart_send/tx_data" type="array">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_uart_send/tx_cnt" type="array">
+      <obj_property name="ElementShortName">tx_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_cnt[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_uart_send/tx_flag" type="logic">
+      <obj_property name="ElementShortName">tx_flag</obj_property>
+      <obj_property name="ObjectShortName">tx_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/din" type="array">
+      <obj_property name="ElementShortName">din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_sync_fifo_cnt/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_data_deal_uart/i" type="array">
+      <obj_property name="ElementShortName">i[2:0]</obj_property>
+      <obj_property name="ObjectShortName">i[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_uart_send/uart_tx_flag" type="logic">
+      <obj_property name="ElementShortName">uart_tx_flag</obj_property>
+      <obj_property name="ObjectShortName">uart_tx_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_uart_send/tx_flag" type="logic">
+      <obj_property name="ElementShortName">tx_flag</obj_property>
+      <obj_property name="ObjectShortName">tx_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_data_deal_uart/TX_Done_Sig" type="logic">
+      <obj_property name="ElementShortName">TX_Done_Sig</obj_property>
+      <obj_property name="ObjectShortName">TX_Done_Sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_data_deal_uart/count" type="array">
+      <obj_property name="ElementShortName">count[6:0]</obj_property>
+      <obj_property name="ObjectShortName">count[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ccd_top_tb/ccd_top_tb/u_data_deal_uart/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+</wave_config>
